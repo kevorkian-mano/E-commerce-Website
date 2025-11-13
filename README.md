@@ -1,6 +1,1 @@
-node_modules/
-backend/node_modules/
-frontend/node_modules/
 
-# environment variables
-.env
