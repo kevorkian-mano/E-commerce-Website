@@ -29,14 +29,8 @@ const Home = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-800 rounded-lg shadow-lg p-12 text-white mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to E-Shop</h1>
-        <p className="text-xl mb-8 text-primary-100">
-          Discover amazing products at unbeatable prices
-        </p>
-        <Link to="/products" className="inline-block bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-          Shop Now
-        </Link>
+      <div className="bg-gradient-to-r from-primary-900 to-primary-900 rounded-lg shadow-lg p-12 text-white mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Inspired by moonlight, made for your shine.</h1>
       </div>
 
       {/* Categories */}
@@ -53,7 +47,7 @@ const Home = () => {
                 to={`/products?category=${encodeURIComponent(category)}`}
                 className="card hover:shadow-lg transition-shadow text-center"
               >
-                <FiShoppingBag className="text-3xl mx-auto mb-2 text-primary-600" />
+                <FiShoppingBag className="text-3xl mx-auto mb-2 text-black" />
                 <h3 className="font-semibold">{category}</h3>
               </Link>
             ))}

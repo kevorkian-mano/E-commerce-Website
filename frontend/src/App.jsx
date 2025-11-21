@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import { AuthProvider } from './context/AuthContext';
 import { CartProvider } from './context/CartContext';
+import ScrollToTop from './components/ScrollToTop';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import ProtectedRoute from './components/layout/ProtectedRoute';
@@ -26,9 +27,11 @@ import AdminAnalytics from './pages/admin/AdminAnalytics';
 
 function App() {
   return (
+    
     <AuthProvider>
       <CartProvider>
         <Router>
+         <ScrollToTop />
           <div className="min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-grow">

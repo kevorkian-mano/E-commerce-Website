@@ -21,21 +21,21 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold text-primary-600">E-Shop</span>
+            <span className="text-6xl font-bold text-black">LUCINE</span>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/" className="text-gray-700 hover:text-black transition-colors">
               Home
             </Link>
-            <Link to="/products" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/products" className="text-gray-700 hover:text-black transition-colors">
               Products
             </Link>
             
             {user ? (
               <>
-                <Link to="/cart" className="relative text-gray-700 hover:text-primary-600 transition-colors">
+                <Link to="/cart" className="relative text-gray-700 hover:text-black transition-colors">
                   <FiShoppingCart className="text-xl" />
                   {cartItemCount > 0 && (
                     <span className="absolute -top-2 -right-2 bg-primary-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -43,12 +43,12 @@ const Navbar = () => {
                     </span>
                   )}
                 </Link>
-                <Link to="/orders" className="text-gray-700 hover:text-primary-600 transition-colors">
+                <Link to="/orders" className="text-gray-700 hover:text-black transition-colors">
                   Orders
                 </Link>
                 {isAdmin && (
-                  <Link to="/admin" className="text-gray-700 hover:text-primary-600 transition-colors">
-                    Admin
+                  <Link to="/admin" className="text-gray-700 hover:text-black transition-colors">
+                    Admin Portal
                   </Link>
                 )}
                 <div className="flex items-center space-x-2">
@@ -65,7 +65,7 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link to="/login" className="text-gray-700 hover:text-primary-600 transition-colors">
+                <Link to="/login" className="text-gray-700 hover:text-black transition-colors">
                   Login
                 </Link>
                 <Link to="/register" className="btn-primary">
@@ -89,14 +89,14 @@ const Navbar = () => {
           <div className="md:hidden py-4 space-y-3">
             <Link
               to="/"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
+              className="block text-gray-700 hover:text-black transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/products"
-              className="block text-gray-700 hover:text-primary-600 transition-colors"
+              className="block text-gray-700 hover:text-black transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Products
@@ -105,14 +105,14 @@ const Navbar = () => {
               <>
                 <Link
                   to="/cart"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
+                  className="block text-gray-700 hover:text-black transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Cart ({cartItemCount})
                 </Link>
                 <Link
                   to="/orders"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
+                  className="block text-gray-700 hover:text-black transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Orders
@@ -120,7 +120,7 @@ const Navbar = () => {
                 {isAdmin && (
                   <Link
                     to="/admin"
-                    className="block text-gray-700 hover:text-primary-600 transition-colors"
+                    className="block text-gray-700 hover:text-black transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Admin
@@ -145,7 +145,7 @@ const Navbar = () => {
               <>
                 <Link
                   to="/login"
-                  className="block text-gray-700 hover:text-primary-600 transition-colors"
+                  className="block text-gray-700 hover:text-black transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Login
