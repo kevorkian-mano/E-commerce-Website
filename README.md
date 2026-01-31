@@ -333,7 +333,6 @@ cd frontend && npm run e2e:open
 - Complete Missing Unit tests If there are
 - **OTP Generation** 
 
-
 ---
 
 ## 📝 License
